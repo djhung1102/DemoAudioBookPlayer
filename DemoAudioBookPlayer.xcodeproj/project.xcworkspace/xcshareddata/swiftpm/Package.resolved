@@ -1,0 +1,42 @@
+{
+  "originHash" : "c9fbab80c5a48721cd1a6401bbc2383117d87f4141107b5ddae2596477899f12",
+  "pins" : [
+    {
+      "identity" : "publicservices",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tranduchieu/PublicServices",
+      "state" : {
+        "branch" : "main",
+        "revision" : "fac87dbaab3e4824b1559cd48c9a38298d66403c"
+      }
+    },
+    {
+      "identity" : "swiftdesign",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tranduchieu/SwiftDesign",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3d7ad606d4b4b04d3d1896793869bc0953367227"
+      }
+    },
+    {
+      "identity" : "swiftsoup",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scinfu/SwiftSoup.git",
+      "state" : {
+        "revision" : "028487d4a8a291b2fe1b4392b5425b6172056148",
+        "version" : "2.7.2"
+      }
+    },
+    {
+      "identity" : "youtubekitify",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tranduchieu/YouTubeKitify",
+      "state" : {
+        "branch" : "audiobooks/dev",
+        "revision" : "2bf05d2995a209f6babb91461b9a3389781a9756"
+      }
+    }
+  ],
+  "version" : 3
+}

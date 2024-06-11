@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		EF3806162C16FE0900CBED62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3806152C16FE0900CBED62 /* ContentView.swift */; };
 		EF3806182C16FE0A00CBED62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3806172C16FE0A00CBED62 /* Assets.xcassets */; };
 		EF38061B2C16FE0A00CBED62 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF38061A2C16FE0A00CBED62 /* Preview Assets.xcassets */; };
+		EF3806242C16FE5800CBED62 /* AudioBookPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = EF3806232C16FE5800CBED62 /* AudioBookPlayer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		EF3806152C16FE0900CBED62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EF3806172C16FE0A00CBED62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF38061A2C16FE0A00CBED62 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF3806212C16FE3800CBED62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF3806242C16FE5800CBED62 /* AudioBookPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +54,7 @@
 		EF3806122C16FE0900CBED62 /* DemoAudioBookPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				EF3806212C16FE3800CBED62 /* Info.plist */,
 				EF3806132C16FE0900CBED62 /* DemoAudioBookPlayerApp.swift */,
 				EF3806152C16FE0900CBED62 /* ContentView.swift */,
 				EF3806172C16FE0A00CBED62 /* Assets.xcassets */,
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = DemoAudioBookPlayer;
+			packageProductDependencies = (
+				EF3806232C16FE5800CBED62 /* AudioBookPlayer */,
+			);
 			productName = DemoAudioBookPlayer;
 			productReference = EF3806102C16FE0900CBED62 /* DemoAudioBookPlayer.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = EF3806072C16FE0800CBED62;
+			packageReferences = (
+				EF3806222C16FE5800CBED62 /* XCLocalSwiftPackageReference "../../../Packages/AudioBookPlayer" */,
+			);
 			productRefGroup = EF3806112C16FE0900CBED62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,6 +285,7 @@
 				DEVELOPMENT_TEAM = 3F7WUS6BV4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoAudioBookPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +315,7 @@
 				DEVELOPMENT_TEAM = 3F7WUS6BV4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DemoAudioBookPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +356,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		EF3806222C16FE5800CBED62 /* XCLocalSwiftPackageReference "../../../Packages/AudioBookPlayer" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../../Packages/AudioBookPlayer;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF3806232C16FE5800CBED62 /* AudioBookPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AudioBookPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EF3806082C16FE0800CBED62 /* Project object */;
 }
